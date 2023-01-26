@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7s%7t8!c6!*rlo)vfv^94_5kq@icwj0f**anhdsbv3fdqt29fq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['formlive-cli1.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
