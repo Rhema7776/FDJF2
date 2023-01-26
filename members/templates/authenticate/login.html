@@ -1,0 +1,22 @@
+{% extends 'base.html'   %}
+
+{% block content %}
+
+<h2 class="container">Login here</h2>
+<br/><br/>
+
+            <form action="" method="POST" class="container w-50">
+                {% csrf_token %}
+                               
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Username</label>
+                  <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="username">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+   
+{% endblock content %}
