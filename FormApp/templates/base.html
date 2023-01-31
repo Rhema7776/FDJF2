@@ -24,12 +24,25 @@
       .navbar-brand {
         font-weight: #021331 500;
       }
+      .dhms{
+        width: 18%;
+      }
       .fl_sp{
         display: flex;
         justify-content: space-between;
       }
+      h6{
+        font-size: small;
+      }
       form{
         width: 50%;
+      }
+      /* .me-5{
+        background-color: palevioletred;
+      } */
+      #day{
+       
+        width : 4rem;
       }
     </style>
   </head>
@@ -92,7 +105,7 @@
         </div>
       </div>
     </nav>
-    <div>
+    <div class="container">
       {% if messages %} {% for message in messages %}
 
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -123,13 +136,14 @@
       <section
       style= "background: linear-gradient(135deg, #002462 0, #0053b7 100%);" class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
       >
-        <!-- Left -->
+        <center>
+              <!-- Left -->
         <div class="me-5 block container">
           <h3 style="align-self: centre;">REGISTRATION IS FREE UNTIL</h3>
           <div class="fl_sp time text-white text center">
-            <div class="dhms">
+            <div class="dhms" >
                 <h3 class="p-3 day">00</h3>
-                <h6 class="text-muted">DAYS</h6>
+                <h6 class="text-muted"  id="day">DAYS</h6>
             </div>
             <div class="dhms">
                 <h3 class="p-3 hour">00</h3>
@@ -145,6 +159,7 @@
             </div>
           </div>
         </div>
+        </center>
         <!-- Left -->
 
         <!-- Right -->
